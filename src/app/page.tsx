@@ -148,7 +148,12 @@ export default function Home() {
             </div>
             <main>
                 <section id="hero" className="">
-                    <div className="hero">
+                    <div
+                        style={{
+                            backgroundImage: `url("./assets/graphics/hero/Banner.jpg")`,
+                        }}
+                        className="hero"
+                    >
                         <div className="hero__overlay">
                             <div className="hero__content wrp">
                                 <div className="hero__text">
