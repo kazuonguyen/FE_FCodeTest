@@ -1,0 +1,27 @@
+.Dropdown {
+    background-color: #ffffff;
+    border: 1px solid var(--bdbdbd, #bdbdbd);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 36px 100px 0px rgba(0, 0, 0, 0.25);
+    top: 0;
+    /* Translate X -50% to horizontal center */
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1750px) {
+    .Dropdown {
+        transform: translateX(-50%);
+    }
+}
+
+.Completed {
+    color: #ffffff;
+    background-color: var(--30-d-158, #30d158);
+    font-size: 16px;
+}
+
+.Error {
+    color: #ffffff;
+    background-color: var(--ff-6-a-6-a, #ff6a6a);
+    font-size: 16px;
+}

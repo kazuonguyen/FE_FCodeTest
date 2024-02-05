@@ -1,0 +1,46 @@
+.filterButton {
+    border: 1px solid var(--bdbdbd, #bdbdbd);
+    border-radius: 100px;
+    padding-left: 20px;
+    padding-right: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 210px;
+    height: 44px;
+    display: flex;
+}
+
+.filterGroup {
+    left: 539px;
+}
+
+.filterDropdown {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.filterDropdown::-webkit-scrollbar {
+    display: none;
+}
+.filterText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    /* 30px */
+}
+
+.filterIconInactive {
+    aspect-ratio: 1/1 auto;
+    color: #3a3a3c;
+}
+
+.filterIconActive {
+    aspect-ratio: 1/1 auto;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1750px) {
+    .filterGroup {
+        left: 400px;
+    }
+}

@@ -1,0 +1,150 @@
+.loading {
+    animation: s3 0.7s infinite linear;
+}
+
+@keyframes s3 {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.SvgSpinner {
+    animation: rotate 2s linear infinite;
+    width: 50%;
+    height: 50%;
+
+    & .path {
+        stroke: #ffffff;
+        stroke-linecap: round;
+        animation: dash 1.5s ease-in-out infinite;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+.GradientBase {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        linear-gradient(
+            45deg,
+            rgba(179, 179, 179, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(0, 0, 0, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(179, 179, 179, 0.3)
+        ),
+        linear-gradient(
+            -135deg,
+            rgba(0, 0, 0, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        linear-gradient(
+            90deg,
+            rgba(179, 179, 179, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(0, 0, 0, 0.3),
+            rgba(26, 26, 26, 0.3),
+            rgba(77, 77, 77, 0.3),
+            rgba(128, 128, 128, 0.3),
+            rgba(179, 179, 179, 0.3)
+        );
+    background-size: 200% 200%;
+    animation: gradient 7s ease infinite;
+    width: 230px;
+    /* height: 230px; */
+    aspect-ratio: 1;
+    background-color: #000000;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 70%;
+    }
+    50% {
+        background-position: 100% 70%;
+    }
+    100% {
+        background-position: 0% 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .GradientBase {
+        width: 28.75vw;
+        /* height: 28.75vw; */
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .GradientBase {
+        width: 28.75vh;
+        /* height: 28.75vh; */
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height: 800px) {
+    .GradientBase {
+        width: 20vw;
+        /* height: 20vw; */
+    }
+}
+
+/* Set width and padding to use */
+.SmallLoading {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #000000;
+    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: s3 1s infinite linear;
+}
+@keyframes s3 {
+    to {
+        transform: rotate(1turn);
+    }
+}

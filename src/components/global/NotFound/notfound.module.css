@@ -1,0 +1,41 @@
+.notFoundMessage {
+    font-size: 58px;
+}
+
+@media screen and (max-width: 645px) {
+    .notFoundMessage {
+        font-size: 7vw; /* Adjust the value as needed */
+    }
+}
+
+.notFoundReturnButton {
+    font-size: 26px;
+    width: 404px;
+    height: 75px;
+    /* padding-left: 34;
+    padding-right: 69;
+    padding-top: 18;
+    padding-bottom: 18; */
+}
+
+@media screen and (max-width: 645px) {
+    .notFoundReturnButton {
+        font-size: 3vw;
+        width: 100%;
+        height: 80%;
+        /* padding-left: 34;
+        padding-right: 69;
+        padding-top: 18;
+        padding-bottom: 18; */
+    }
+}
+
+.notFound404 {
+    width: 485px;
+}
+
+@media screen and (max-width: 645px) {
+    .notFound404 {
+        width: 204px;
+    }
+}

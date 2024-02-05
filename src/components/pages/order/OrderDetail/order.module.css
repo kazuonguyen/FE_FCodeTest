@@ -1,0 +1,395 @@
+.orderDialog {
+    width: 1720px;
+    max-width: 1720px;
+    max-height: max-content;
+    height: 840px;
+    border-radius: 20px;
+    border: 1px solid var(--Fill-Grey-4, #E5E5EA);
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 36px 100px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.orderNoteContent{
+    width: 518px;
+    max-width: 518px;
+    height: 840px;
+    max-height: max-content;
+    padding-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+}
+
+.orderNoteArea {
+    border-radius: 9.856px;
+    border: 1px solid var(--Fill-Grey-3, #C7C7CC);
+height: 688px;
+width: 494px;
+max-width: 494px;
+max-height: 688px;
+padding-top: 20px;
+padding-left: 20px;
+font-size: 17px;
+padding-right: 20px;
+padding-bottom: 20px;
+resize: none;
+}
+
+.orderCreatedAt {
+    height: 66px;
+    width: 197px;
+    border-radius: 8px;
+    border: 1px solid var(--Fill-Grey-4, #E5E5EA);
+    background: var(--Fill-White, #FFF);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 16px;
+}
+
+.orderSideBar {
+    width: 221px;
+    max-width: max-content;
+    max-height: max-content;
+    height: 840px;
+    border-right: 0.5px solid var(--bdbdbd, #bdbdbd);
+    border-left: 0.5px solid var(--bdbdbd, #bdbdbd);
+}
+
+.orderCell {
+    height: 506px;
+    width: 221px;
+    border-bottom: 0.5px solid var(--bdbdbd, #bdbdbd);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 32px;
+    /* fixed and not scrollable */
+    overflow: hidden;
+}
+
+.orderTab {
+    width: 197px;
+    height: 43px;
+}
+
+@media screen and (max-width: 1750px) {
+    .orderDialog {
+        margin-top: 100px;
+    }
+}
+
+.orderContent {
+    height: 840px;
+    width: 981px;
+    padding-top: 24px;
+}
+
+.orderCode {
+    height: 66px;
+    width: 197px;
+    border-radius: 8px;
+    background: var(--3-a-3-a-3-c, #3a3a3c);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-bottom: 16px;
+}
+
+.orderPrice {
+    height: 66px;
+    width: 197px;
+    border-radius: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    /* border: 0.5px solid var(--bdbdbd, #bdbdbd); */
+}
+
+.orderStatus {
+    background-color: #ffffff;
+    border: 1px solid var(--bdbdbd, #bdbdbd);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 36px 100px 0px rgba(0, 0, 0, 0.25);
+    /* left: 25%; */
+    font-size: 16px;
+}
+@media screen and (max-width: 1750px) {
+    .Dropdown {
+        /* left: 20%; */
+    }
+}
+.orderComplete {
+    color: #ffffff;
+    background-color: var(--30-d-158, #30d158);
+    font-size: 16px;
+}
+
+.orderError {
+    color: #ffffff;
+    background-color: var(--ff-6-a-6-a, #ff6a6a);
+    font-size: 16px;
+}
+
+.orderNote {
+    width: 197px;
+    height: 36px;
+    border-radius: 100px;
+    /* border: 0.5px solid var(--bdbdbd, #bdbdbd); */
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    background: var(--white, #fff);
+    margin-top: 16px;
+    padding-left: 36px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.orderQR {
+    width: 197px;
+    height: 36px;
+    border-radius: 100px;
+    /* border: 0.5px solid var(--bdbdbd, #bdbdbd); */
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    background: var(--white, #fff);
+    padding-left: 36px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.noteDialog {
+    width: 735px;
+    max-height: max-content;
+    height: 613px;
+    max-width: max-content;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+
+.noteTextArea {
+    border: 0.493px solid var(--bdbdbd, #bdbdbd);
+    /* margin-top: 36px; */
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 28px;
+    border-radius: 9.856px;
+    width: 679px;
+    height: 436px;
+    resize: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1750px) {
+    .noteDialog {
+        margin-top: 100px;
+    }
+}
+
+.sideShirtGroup {
+    border-radius: 100px;
+    background: var(--white, #fff);
+    /* button */
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    height: 44px;
+    width: 876px;
+    top: 0px;
+    padding: 4px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 400;
+}
+
+.sideShirtButton {
+    border-radius: 100px;
+    height: 36px;
+    width: 441px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 10px;
+}
+.designItem {
+}
+
+.designImage {
+    overflow-y: scroll;
+    overflow: scroll;
+    border-radius: 20px;
+    background: var(--white, #fff);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.designDetail {
+    height: 188px;
+    width: 459px;
+    margin-bottom: 20px;
+}
+
+.orderNum {
+    width: 561px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    background: var(--white, #fff);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.orderDownload {
+    border-radius: 100px;
+    background: var(--3-a-3-a-3-c, #3a3a3c);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 135px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.orderDownloadLink {
+    border-radius: 100px;
+    background: var(--007-aff, #007aff);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 149px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.scrollBar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+.downloadDialog {
+    width: 1014px;
+    max-width: max-content;
+    max-height: max-content;
+    height: 840px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.downloadContent {
+    height: 100%;
+    width: 1014px;
+    padding-bottom: 24px;
+    padding-right: 32px;
+    overflow: hidden;
+}
+
+.downloadImage {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+.downloadSidebar {
+    width: 284px;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.designDownload {
+    margin-top: 20px;
+    border-radius: 100px;
+    background: var(--Accent-Blue, #007aff);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 135px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.designDownload {
+    margin-top: 20px;
+    border-radius: 100px;
+    background: var(--Accent-Blue, #007aff);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 135px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.designUndo {
+    margin-top: 20px;
+    border-radius: 100px;
+    background: var(--3-a-3-a-3-c, #3a3a3c);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 135px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.zoomLevel {
+    width: "fit-content";
+    padding: "9px 16px";
+    text-align: "center";
+    height: "100%";
+    border: "0.5px solid var(--bdbdbd, #BDBDBD)";
+    border-radius: "8px";
+}
+
+.designResize {
+    margin-top: 20px;
+    border-radius: 100px;
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 135px;
+    padding: 8px 7px 8px 16px;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,31 @@
+.baseinput {
+    font-size: 20px;
+    padding-top: 38px;
+    padding-left: 31px;
+    padding-right: 57px;
+}
+
+.baselabel {
+    font-size: 20px;
+    top: 24px;
+    left: 31px;
+}
+
+.button {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+    .baseinput {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .baselabel {
+        font-size: 10px;
+        top: 12px;
+        left: 17px;
+    }
+}

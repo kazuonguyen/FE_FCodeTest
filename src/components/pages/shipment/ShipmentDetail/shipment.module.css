@@ -1,0 +1,260 @@
+.shipmentDialog {
+    width: 1720px;
+    max-width: 1720px;
+    max-height: max-content;
+    height: 840px;
+    border-radius: 20px;
+    border: 1px solid var(--Fill-Grey-4, #E5E5EA);
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 36px 100px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.shipmentNoteContent{
+    width: 518px;
+    max-width: 518px;
+    height: 840px;
+    max-height: max-content;
+    padding-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+}
+
+.shipmentNoteArea {
+    border-radius: 9.856px;
+    border: 1px solid var(--Fill-Grey-3, #C7C7CC);
+    height: 688px;
+    width: 494px;
+    max-width: 494px;
+    max-height: 688px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    resize: none;
+}
+
+.shipmentSideBar{
+        width: 221px;
+        max-width: max-content;
+        max-height: max-content;
+        height: 840px;
+        border-right: 0.5px solid var(--bdbdbd, #bdbdbd);
+        border-left: 0.5px solid var(--bdbdbd, #bdbdbd);
+}
+
+.shipmentContent {
+    height: 840px;
+    width: 981px;
+    padding-top: 24px;
+}
+
+
+.shipmentCell{
+    /* height: 468px;
+    width: 221px; */
+    text-align: center;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* padding-bottom: 32px; */
+    /* fixed and not scrollable */
+    /* overflow: hidden; */
+}
+
+.shipmentNum {
+    height: 66px;
+    width: 197px;
+    border-radius: 8px;
+    background: var(--3-a-3-a-3-c, #3a3a3c);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-bottom: 16px;
+}
+
+.shipmentArrivedAt {
+    height: 66px;
+    width: 197px;
+    border-radius: 8px;
+    border: 1px solid var(--Fill-Grey-4, #E5E5EA);
+    background: var(--Fill-White, #FFF);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 16px;
+}
+
+.shipmentPaidAt{
+        height: 66px;
+        width: 197px;
+        border-radius: 8px;
+        border: 1px solid var(--Fill-Grey-4, #E5E5EA);
+        background: var(--Fill-White, #FFF);
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 42px;
+        padding-right: 42px;
+        margin-bottom: 16px;
+}
+
+.scrollBar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+.shipmentPrice{
+        height: 66px;
+        width: 197px;
+        border-radius: 8px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 16px;
+}
+
+.shipmentStatus {
+    background-color: #ffffff;
+    border: 1px solid var(--bdbdbd, #bdbdbd);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.55), 0px 36px 100px 0px rgba(0, 0, 0, 0.25);    /* left: 25%; */
+    font-size: 16px;
+}
+@media screen and (max-width: 1750px) {
+    .Dropdown {
+        /* left: 20%; */
+    }
+}
+.shipmentComplete {
+    color: #ffffff;
+    background-color: var(--30-d-158, #30d158);
+    font-size: 16px;
+}
+
+.shipmentNote {
+    width: 197px;
+    height: 36px;
+    border-radius: 100px;
+    /* border: 0.5px solid var(--bdbdbd, #bdbdbd); */
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    background: var(--white, #fff);
+    margin-top: 16px;
+    padding-left: 36px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+
+.noteDialog {
+    width: 735px;
+    max-height: max-content;
+    height: 613px;
+    max-width: max-content;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+
+.noteTextArea {
+    border: 0.493px solid var(--bdbdbd, #bdbdbd);
+    /* margin-top: 36px; */
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 28px;
+    border-radius: 9.856px;
+    width: 679px;
+    height: 436px;
+    resize: none;
+    font-size: 20px;
+
+}
+
+
+.shipmentNumber {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-radius: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 23px;
+    background: var(--3-a-3-a-3-c, #3a3a3c);
+    width: 679px;
+    height: 54px;
+}
+
+
+.inputPrice {
+    width: 679px;
+    height: 62px;
+    max-height: 62px;
+    max-width: 679px;
+    border-radius: 9.856px;
+    border: 0.493px solid var(--bdbdbd, #bdbdbd);
+    padding-left: 24px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.errorDialog {
+    width: 735px;
+    height: 581px;
+    border-radius: 20px;
+    background: var(--white, #fff);
+    /* Shadow_low */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 28px;
+}
+
+.errorRow {
+    width: 687px;
+    height: 44px;
+    max-width: 687px;
+    max-height: 44px;
+    border-radius: 12px;
+    background: var(--ffecec, #ffecec);
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    margin-top: 24px;
+    user-select: none;
+}
+
+.tableView {
+    height: 420px;
+    max-height: "max-content";
+    width: 683px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* if overflow show scrollbar */
+}
+
+.errorPill {
+    width: 104px;
+    height: 31px;
+    border-radius: 100px;
+    background: var(--ff-6-a-6-a, #ff6a6a);
+}

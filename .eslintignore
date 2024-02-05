@@ -1,0 +1,9 @@
+/src/packages/**/*.js
+/src/packages/**/*.jsx
+/src/packages/**/*.ts
+/src/packages/**/*.tsx
+/src/packages/**/*.html
+/src/packages/**/*.css
+/src/packages/**/*.json
+/public/palleon-js/js/custom.js
+/public/palleon-js/js/palleon.js

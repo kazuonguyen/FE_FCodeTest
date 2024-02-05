@@ -1,0 +1,33 @@
+.noteDialog {
+    width: 735px;
+    max-height: max-content;
+    height: 613px;
+    max-width: max-content;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+}
+
+.noteTextArea {
+    border: 0.493px solid var(--bdbdbd, #bdbdbd);
+    /* margin-top: 36px; */
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 56px;
+    border-radius: 9.856px;
+    width: 679px;
+    height: 436px;
+    resize: none;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1750px) {
+    .noteDialog {
+        margin-top: 100px;
+    }
+}
