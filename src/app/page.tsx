@@ -80,7 +80,10 @@ export default function Home() {
                                     <p>cart items</p>
                                     <div className="cart__single">
                                         <div className="cart__image">
-                                            <img src="/assets/graphics/Shop/product-3.png" alt="" />
+                                            <img
+                                                src="./assets/graphics/Shop/product-3.png"
+                                                alt=""
+                                            />
                                         </div>
 
                                         <div className="cart__info">
@@ -458,7 +461,7 @@ export default function Home() {
                                 <li className="splide__slide">
                                     <div className="testimonial wrp">
                                         <img
-                                            src="/assets/graphics/Testimonial/profile-img.jpg"
+                                            src="./assets/graphics/Testimonial/profile-img.jpg"
                                             alt=""
                                         />
                                         <div className="product__rating">
