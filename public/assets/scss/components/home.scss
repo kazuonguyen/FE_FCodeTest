@@ -7,7 +7,7 @@
     padding: 0;
   }
   .hero {
-    background-image: url("/assets/graphics/hero/Banner.jpg");
+    background-image: url("./assets/graphics/hero/Banner.jpg");
     width: 100%;
     background-size: cover;
     background-position: 110px;
@@ -515,12 +515,12 @@
 }
 
 .post-1{
-  background-image: url(/assets/graphics/blog/blog-post-1.png);
+  background-image: url(./assets/graphics/blog/blog-post-1.png);
 }
 
 
 .post-2{
-  background-image: url(/assets/graphics/blog/blog-post-2.png);
+  background-image: url(./assets/graphics/blog/blog-post-2.png);
 }
 
 
