@@ -2,10 +2,15 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-
+import { useSelector, useDispatch } from "react-redux";
+import { addProduct } from "@/redux/slice/alertSlice";
 import ScreenStyleMain from "@/components/global/ScreenStyle/ScreenStyleMain";
 
 export default function Product() {
+    const dispatch = useDispatch();
+    function addProductPage() {
+        dispatch(addProduct());
+    }
     return (
         <section id="product" className="wrp">
             <div className="products">
@@ -29,9 +34,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-2 --------------- */}
@@ -49,9 +58,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-3 --------------- */}
@@ -69,9 +82,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-4 --------------- */}
@@ -89,9 +106,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-5 --------------- */}
@@ -109,9 +130,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-6 --------------- */}
@@ -129,9 +154,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-7 --------------- */}
@@ -149,9 +178,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------------- Product-8 --------------- */}
@@ -169,9 +202,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* --------- Product 9 --------- */}
@@ -189,9 +226,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* ------- Product 10 -------- */}
@@ -209,9 +250,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* ------- Product 11 -------- */}
@@ -229,9 +274,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                     {/* ------- Product 12 -------- */}
@@ -249,9 +298,13 @@ export default function Product() {
                                 <span className="fa fa-star" />
                                 <span className="fa fa-star" />
                             </div>
-                            <a href="#" className="btn__cart xd__btn btn-secondary">
+                            <button
+                                type="button"
+                                onClick={() => addProductPage()}
+                                className="btn__cart xd__btn btn-secondary"
+                            >
                                 add to cart
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

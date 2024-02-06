@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface AlertState {
-    messages: string | null;
+    messages: number | 0;
     type: string | null;
     showMessage: boolean;
 }
 
 const initialState: AlertState = {
-    messages: null,
+    messages: 0,
     type: null,
     showMessage: false,
 };
@@ -18,26 +18,14 @@ const alertSlice = createSlice({
     name: "alert",
     initialState,
     reducers: {
-        setError: (state, action: PayloadAction<string>) => {
-            //  console.log("error");
-            state.messages = action.payload;
-            state.type = "error";
-            state.showMessage = true;
-        },
-        setSuccess: (state, action: PayloadAction<string>) => {
+        addProduct: (state) => {
             // console.log("success");
-            state.messages = action.payload;
+            state.messages += 1;
             state.type = "success";
             state.showMessage = true;
-        },
-        clearMessage: (state) => {
-            // console.log("clear");
-            state.messages = null;
-            state.type = null;
-            state.showMessage = false;
         },
     },
 });
 
-export const { setError, clearMessage, setSuccess } = alertSlice.actions;
+export const { addProduct } = alertSlice.actions;
 export default alertSlice.reducer;

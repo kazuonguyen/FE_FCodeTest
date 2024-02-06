@@ -11,7 +11,7 @@ export default function Page() {
         <ScreenStyleMain>
             <div id="header" />
             <div className="page__banner shop__banner">
-                <h2> shope</h2>
+                <h2>Shop</h2>
             </div>
             <main>
                 {/* ######################################### */}

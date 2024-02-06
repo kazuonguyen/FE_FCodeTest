@@ -4,6 +4,8 @@
 import { useLayoutEffect, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { User, loginSuccess } from "../../slice/authSlice";
+import Navbar from "@/components/global/Navbar/Navbar";
+import Footer from "@/components/global/Footer/Footer";
 
 interface GetSessionStorageProps {
     children: React.ReactNode;
@@ -32,5 +34,11 @@ export default function GetSessionStorage({ children }: GetSessionStorageProps) 
         };
     }, []);
 
-    return <div>{children}</div>;
+    return (
+        <div>
+            <Navbar />
+            {children}
+            <Footer />
+        </div>
+    );
 }

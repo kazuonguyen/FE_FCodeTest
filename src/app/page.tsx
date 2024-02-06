@@ -2,139 +2,17 @@
 
 import React, { use, useEffect } from "react";
 import Link from "next/link";
+import { useSelector, useDispatch } from "react-redux";
+
+import { RootState } from "@/redux/store/store";
 
 import ScreenStyleMain from "@/components/global/ScreenStyle/ScreenStyleMain";
 import Product from "@/components/global/Product/Product";
+import Navbar from "@/components/global/Navbar/Navbar";
 
 export default function Home() {
     return (
         <ScreenStyleMain>
-            <div id="header">
-                <div id="header">
-                    <header id="header" className="header__main flx wrp">
-                        <div className="logo__main">
-                            <img src="./assets/graphics/header/main-logo.png" alt="Organick logo" />
-                        </div>
-
-                        <div className="nav__wrapper">
-                            <nav className="nav__main">
-                                <ul style={{ marginLeft: "20px" }} className="ul__main flx">
-                                    <a href="/index.html">
-                                        <li>Home</li>
-                                    </a>
-                                    <a href="/about.html">
-                                        <li>About</li>
-                                    </a>
-                                    <li className="dropdown">
-                                        <a href="./orders">Shope</a>
-                                        <i
-                                            className="fa fa-chevron-circle-down"
-                                            aria-hidden="true"
-                                        />
-
-                                        <ul className="dropdown-menu">
-                                            <li>
-                                                <a href="/Shop-Single.html">Shop Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <a href="/contact.html">
-                                        <li>Contact</li>
-                                    </a>
-                                    <a href="/blog.html">
-                                        <li>Blog</li>
-                                    </a>
-                                </ul>
-                            </nav>
-
-                            <div className="search flx">
-                                <input type="text" id="search" />
-                                <a href="">
-                                    <img
-                                        src="./assets/graphics/header/search-icon.png"
-                                        alt="search icon"
-                                    />
-                                </a>
-                            </div>
-
-                            <div className="cart flx">
-                                <img
-                                    src="./assets/graphics/header/cart-icon.png"
-                                    className="cart__icon"
-                                    alt="cart icon"
-                                />
-                                <p id="cart-count">cart (0)</p>
-
-                                <div className="cart__items">
-                                    <p>cart items</p>
-                                    <div className="cart__single">
-                                        <div className="cart__image">
-                                            <img
-                                                src="./assets/graphics/Shop/product-3.png"
-                                                alt=""
-                                            />
-                                        </div>
-
-                                        <div className="cart__info">
-                                            <p className="product__name">Nuts</p>
-
-                                            <div className="product__price-single">
-                                                <p className="product__discount">$20.00</p>
-                                                <p className="product__price">$13.00</p>
-                                            </div>
-
-                                            <div className="product__detail">
-                                                <p>Quantity :</p>
-                                                <span className="qty__btn">
-                                                    <button
-                                                        className="qty-count qty-count--minus"
-                                                        data-action="minus"
-                                                        type="button"
-                                                    >
-                                                        -
-                                                    </button>
-                                                    <input
-                                                        className="product-qty"
-                                                        type="number"
-                                                        name="product-qty"
-                                                        min="0"
-                                                        max="10"
-                                                        value="1"
-                                                    />
-                                                    <button
-                                                        className="qty-count qty-count--add"
-                                                        data-action="add"
-                                                        type="button"
-                                                    >
-                                                        +
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="cart__btn">
-                                        <a href="#" className=" xd__btn btn-secondary">
-                                            view cart
-                                            <img
-                                                src="./assets/graphics/hero/btn-arrow-icon.png"
-                                                alt=""
-                                            />
-                                        </a>
-
-                                        <a href="#" className=" xd__btn btn-secondary">
-                                            checkout
-                                            <img
-                                                src="./assets/graphics/hero/btn-arrow-icon.png"
-                                                alt=""
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                </div>
-            </div>
             <main>
                 <section id="hero" className="">
                     <div
@@ -396,6 +274,7 @@ export default function Home() {
                     </div>
                 </section>
             </main>
+
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" />
             <script src="./assets/js/script.js" />
         </ScreenStyleMain>
