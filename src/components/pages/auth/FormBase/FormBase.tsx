@@ -2,7 +2,6 @@
 
 import React from "react";
 import form from "./form.module.css";
-import LogoStyleAuth from "@/components/global/Logo/LogoStyleAuth";
 
 interface BaseTitleProps {
     className?: string;
@@ -25,7 +24,6 @@ export default function FormBase({ className, title, children }: FormBaseProps) 
             <div
                 className={`${form.content} w-full flex flex-col items-center justify-center ${className}`}
             >
-                <LogoStyleAuth />
                 <BaseTitle>{title}</BaseTitle>
                 {children}
             </div>

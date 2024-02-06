@@ -3,7 +3,6 @@
 import React from "react";
 import screen from "../../../styles/screen.module.css";
 import Navbar from "../Navbar/Navbar";
-import Alert from "../Alert/Alert";
 
 interface ScreenStyleMainProps {
     className?: string;

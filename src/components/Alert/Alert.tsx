@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/redux/store/store";
-import { clearMessage } from "@/redux/slice/alertSlice";
 import { XIcon } from "@/components/svg/svg";
 import alert from "./alert.module.css";
 
@@ -15,9 +14,7 @@ export default function Alert() {
     const type = useSelector((state: RootState) => state.alert.type);
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            if (showMessage) dispatch(clearMessage());
-        }, 3000);
+        const timeout = setTimeout(() => {}, 3000);
         return () => clearTimeout(timeout);
     }, [showMessage]);
 
@@ -33,13 +30,7 @@ export default function Alert() {
             >
                 {message}
             </p>
-            <button
-                type="button"
-                className="w-fit h-fit"
-                onClick={() => {
-                    dispatch(clearMessage());
-                }}
-            >
+            <button type="button" className="w-fit h-fit" onClick={() => {}}>
                 <XIcon
                     className="w-[1.2em] aspect-square"
                     strokeColor={`${type === "success" ? "#71F871" : "#F87171"}`}

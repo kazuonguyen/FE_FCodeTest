@@ -9,7 +9,7 @@ import ScreenStyleMain from "@/components/global/ScreenStyle/ScreenStyleMain";
 import { RootState } from "@/redux/store/store";
 
 export default function Navbar() {
-    const count = useSelector((state: RootState) => state.alert.messages);
+    const count = useSelector((state: RootState) => state.alert.count);
 
     return (
         <div id="header">
