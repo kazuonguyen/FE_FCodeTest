@@ -1,7 +1,7 @@
 "use client";
 
 //! TEST SESSION STORAGE
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { User, loginSuccess } from "../../slice/authSlice";
 
@@ -18,6 +18,18 @@ export default function GetSessionStorage({ children }: GetSessionStorageProps) 
         if (user) {
             dispatch(loginSuccess(user));
         }
+    }, []);
+    useEffect(() => {
+        const script = document.createElement("script");
+
+        script.src = "./assets/js/slide.js";
+
+        document.body.appendChild(script);
+
+        return () => {
+            // clean up the script when the component in unmounted
+            document.body.removeChild(script);
+        };
     }, []);
 
     return <div>{children}</div>;

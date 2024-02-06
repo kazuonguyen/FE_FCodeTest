@@ -58,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             <body className={inter.className}>
                 <ReduxProvider>{children}</ReduxProvider>
+                <script src="./assets/js/script.js" />
             </body>
         </html>
     );

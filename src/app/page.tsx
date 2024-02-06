@@ -1,23 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { use, useEffect } from "react";
+import Link from "next/link";
 
 import ScreenStyleMain from "@/components/global/ScreenStyle/ScreenStyleMain";
+import Product from "@/components/global/Product/Product";
 
 export default function Home() {
-    useEffect(() => {
-        const script = document.createElement("script");
-
-        script.src = "./assets/js/slide.js";
-
-        document.body.appendChild(script);
-
-        return () => {
-            // clean up the script when the component in unmounted
-            document.body.removeChild(script);
-        };
-    }, []);
-
     return (
         <ScreenStyleMain>
             <div id="header">
@@ -37,7 +26,7 @@ export default function Home() {
                                         <li>About</li>
                                     </a>
                                     <li className="dropdown">
-                                        <a href="/shope.html">Shope</a>
+                                        <a href="/orders">Shope</a>
                                         <i
                                             className="fa fa-chevron-circle-down"
                                             aria-hidden="true"
@@ -248,211 +237,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section id="product" className="wrp">
-                    <div className="products">
-                        <div className="product__title">
-                            <p className="xd_subtitle">Categories</p>
-                            <h2>Our Products</h2>
-                        </div>
-
-                        <div className="product__list">
-                            <div className="product__item content">
-                                <span className="product__tag">Vegetable</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-1.png" alt="" />
-                                    <p className="product__name">Broccoli</p>
-
-                                    <div className="product__detail">
-                                        <p className="product__discount">$20.00</p>
-                                        <p className="product__price">$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="product__item content">
-                                <span className="product__tag">Fruit</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-2.png" alt="" />
-                                    <p className="product__name">Fresh Banana</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product__item content">
-                                <span className="product__tag">Nuts</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-3.png" alt="" />
-                                    <p className="product__name">pistachio</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="product__item content">
-                                <span className="product__tag">Vegetable</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-4.png" alt="" />
-                                    <p className="product__name">Red Tomato</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="product__item content">
-                                <span className="product__tag">Lentils</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-5.png" alt="" />
-                                    <p className="product__name">Mung Bean</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product__item content">
-                                <span className="product__tag">Nuts</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-6.png" alt="" />
-                                    <p className="product__name">Brown Hazelnut</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product__item content">
-                                <span className="product__tag">Dairy</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-7.png" alt="" />
-                                    <p className="product__name">Eggs</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product__item content">
-                                <span className="product__tag">Bakery</span>
-                                <div className="product__wrapper">
-                                    <img src="./assets/graphics/Shop/product-8.png" alt="" />
-                                    <p className="product__name">Elaichi Rusk</p>
-
-                                    <div className="product__detail">
-                                        <p>$20.00</p>
-                                        <p>$13.00</p>
-
-                                        <div className="product__rating">
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star checked" />
-                                            <span className="fa fa-star" />
-                                            <span className="fa fa-star" />
-                                        </div>
-                                        <a href="#" className="btn__cart xd__btn btn-secondary">
-                                            add to cart
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="#" id="loadMore" className="product__btn xd__btn btn-secondary">
-                            Load More
-                            <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="" />
-                        </a>
-                    </div>
-                </section>
-
+                <Product />
                 <section id="testimonial">
                     <div className="hero__overlay" />
                     <div className="testimonial__title">

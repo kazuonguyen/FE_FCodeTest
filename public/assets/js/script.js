@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $("#loadMore").on("click", function (e) {
     e.preventDefault();
     $(".content:hidden").slice(0, 4).slideDown();
-    if ($(".content:hidden").length == 0) {
+    if ($(".content:hidden").length === 0) {
       $("#loadMore").text("No more products").addClass("noContent");
     }
   });
