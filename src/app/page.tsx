@@ -117,7 +117,12 @@ export default function Home() {
 
                 <Product />
                 <section id="testimonial">
-                    <div className="hero__overlay" />
+                    <div
+                        style={{
+                            backgroundImage: `url("./assets/graphics/Testimonial/Testimonial-bg.png")`,
+                        }}
+                        className="hero__overlay"
+                    />
                     <div className="testimonial__title">
                         <p className="xd_subtitle">Testimonial</p>
                         <h2>What Our Customer Saying?</h2>
@@ -237,7 +242,12 @@ export default function Home() {
                     </div>
 
                     <div className="blog__content">
-                        <div className="blog__post post-1">
+                        <div
+                            style={{
+                                backgroundImage: `url("./assets/graphics/blog/blog-post-1.png")`,
+                            }}
+                            className="blog__post post-1"
+                        >
                             <p className="blog-tag">25 Nov</p>
                             <div className="blog__detial">
                                 <h3>The Benefits of Vitamin D</h3>
@@ -251,7 +261,12 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                        <div className="blog__post post-2">
+                        <div
+                            style={{
+                                backgroundImage: `url("./assets/graphics/blog/blog-post-2.png")`,
+                            }}
+                            className="blog__post post-2"
+                        >
                             <p className="blog-tag">25 Nov</p>
                             <div className="blog__detial">
                                 <h3>Our Favorite Summertime Tomato</h3>

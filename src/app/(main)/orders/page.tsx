@@ -10,7 +10,12 @@ export default function Page() {
     return (
         <ScreenStyleMain>
             <div id="header" />
-            <div className="page__banner shop__banner">
+            <div
+                style={{
+                    backgroundImage: `url("./assets/graphics/Shop-page/shop-Banner.png")`,
+                }}
+                className="page__banner shop__banner"
+            >
                 <h2>Shop</h2>
             </div>
             <main>

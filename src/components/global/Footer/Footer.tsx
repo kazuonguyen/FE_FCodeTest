@@ -15,7 +15,12 @@ export default function Footer() {
             {/*                 SUBSCRIBE                 */}
             {/* ######################################### */}
             <section id="subscribe" className="wrp">
-                <div className="subscribe flx">
+                <div
+                    style={{
+                        backgroundImage: `url("./assets/graphics/subscribe/subscribe-bg.png")`,
+                    }}
+                    className="subscribe flx"
+                >
                     <h2>Subscribe to our Newsletter</h2>
                     <form action="" className="flx">
                         <label htmlFor="email">
