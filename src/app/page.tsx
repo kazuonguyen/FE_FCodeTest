@@ -26,7 +26,7 @@ export default function Home() {
                                         <li>About</li>
                                     </a>
                                     <li className="dropdown">
-                                        <a href="/orders">Shope</a>
+                                        <a href="./orders">Shope</a>
                                         <i
                                             className="fa fa-chevron-circle-down"
                                             aria-hidden="true"
