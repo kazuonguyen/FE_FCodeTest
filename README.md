@@ -1,6 +1,6 @@
-# Deligent Logistics Frontend
+# FE_FCodeTest
 
-## Project logistics quản lý đơn hàng và lô hàng cho nhà cung ứng
+## Project template shop bán hàng
 
 ### Local run
 
@@ -39,63 +39,9 @@ Clone về và vào thư mục dự án, sau đó mở terminal và chạy các 
     npm run start --port 3001
 ```
 
-- Kết nối service backend :  
-- Auth service:
-
-```bash
-    ssh -L <port>:localhost:<port> <username>@<ip_server>
-
-    Ví dụ hiện tại:
-
-    ssh -L 35000:localhost:35000 trilm@35.240.193.89
-```
-
-- Logistics service :
-
-```bash
-    ssh -L <port>:localhost:<port> <username>@<ip_server>
-
-    Ví dụ hiện tại:
-
-    ssh -L 35002:localhost:35002 trilm@35.240.193.89
-```
-
 - Mở trình duyện và truy cập vào địa chỉ: <http://localhost:3001>
 
-### Remote run
 
-- Kết nối service frontend :
-
-```bash
-    ssh -L <port>:localhost:<port> <username>@<ip_server>
-
-    Ví dụ hiện tại:
-
-    ssh -L 3000:localhost:3001 trilm@35.240.193.89
-```
-
-- Kết nối service backend :  
-- -Auth service:
-
-```bash
-    ssh -L <port>:localhost:<port> <username>@<ip_server>
-
-    Ví dụ hiện tại:
-
-    ssh -L 35000:localhost:35000 trilm@35.240.193.89
-```
-
-- -Logistics service:
-
-```bash
-    ssh -L <port>:localhost:<port> <username>@<ip_server>
-
-    Ví dụ hiện tại:
-
-    ssh -L 35002:localhost:35002 trilm@35.240.193.89
-```
-
-- Mở trình duyện và truy cập vào địa chỉ: <http://localhost:3001>
 
 ### Server deploy
 
@@ -123,4 +69,3 @@ Clone về và vào thư mục dự án, sau đó mở terminal và chạy các 
 ```
 
 Mở trình duyện và truy cập vào địa chỉ: <http://localhost:3001>
-# FE_FCodeTest

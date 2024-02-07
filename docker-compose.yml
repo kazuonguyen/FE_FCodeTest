@@ -2,7 +2,7 @@ version: "3"
 
 services:
     next-app:
-        container_name: deligent-logistics-fe
+        container_name: FE_FCodeTest
         build:
             context: ./
             target: runner
