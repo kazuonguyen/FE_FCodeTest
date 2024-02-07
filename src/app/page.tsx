@@ -14,7 +14,7 @@ import Categories from "@/components/global/Categories/Categories";
 import About from "@/components/global/About/About";
 import Testimonial from "@/components/global/Testimonial/Testimonial";
 import Info from "@/components/global/Info/Info";
-import Blog from "@/components/global/Blog/blog";
+import Blog from "@/components/global/Blog/Blog";
 
 export default function Home() {
     return (
