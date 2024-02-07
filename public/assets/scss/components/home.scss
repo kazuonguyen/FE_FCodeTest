@@ -27,7 +27,6 @@
   
   .hero__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2.5rem;
     align-items: center;
     align-content: center;
@@ -191,7 +190,6 @@
 
 .about__content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: center;
   justify-items: center;
   gap: 2.5rem;

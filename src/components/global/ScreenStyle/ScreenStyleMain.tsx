@@ -12,7 +12,7 @@ interface ScreenStyleMainProps {
 
 export default function ScreenStyleMain({ className, children, style }: ScreenStyleMainProps) {
     return (
-        <div className={`${screen.screenFullStyleMain}`}>
+        <div style={{ paddingTop: "70px" }} className={`${screen.screenFullStyleMain}`}>
             <div className={`${screen.contentStyleMain} ${className}`} style={style}>
                 {children}
             </div>

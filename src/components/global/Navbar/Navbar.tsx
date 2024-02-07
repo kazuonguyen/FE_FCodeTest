@@ -7,12 +7,31 @@ import { addProduct } from "@/redux/slice/alertSlice";
 import ScreenStyleMain from "@/components/global/ScreenStyle/ScreenStyleMain";
 
 import { RootState } from "@/redux/store/store";
+import HbgBtn from "../Hbgbtn/Hbgbtn";
 
 export default function Navbar() {
     const count = useSelector((state: RootState) => state.alert.count);
-
+    useEffect(() => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelectorAll(".nav__wrapper");
+        hamburger?.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.forEach((element) => {
+                element.classList.toggle("show");
+            });
+        });
+    }, []);
     return (
-        <div id="header">
+        <div
+            style={{
+                position: "fixed",
+                width: "100%",
+                backgroundColor: "white",
+                display: "block",
+                zIndex: 100,
+            }}
+            id="header"
+        >
             <div id="header">
                 <header id="header" className="header__main flx wrp">
                     <div className="logo__main">
@@ -29,7 +48,7 @@ export default function Navbar() {
                                     <li>About</li>
                                 </a>
                                 <li className="dropdown">
-                                    <a href="./orders">Shope</a>
+                                    <a href="./orders">Shop</a>
                                 </li>
                                 <a href="./">
                                     <li>Contact</li>
@@ -59,6 +78,7 @@ export default function Navbar() {
                             <p id="cart-count">cart {count}</p>
                         </div>
                     </div>
+                    <HbgBtn />
                 </header>
             </div>
         </div>

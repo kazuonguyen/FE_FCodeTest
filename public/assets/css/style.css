@@ -1584,7 +1584,7 @@ input::selection {
     flex-direction: column;
     background: var(--primary-color-2);
     position: absolute;
-    top: 15%;
+    top: 100%;
     left: 0;
     right: 0;
     align-items: center;
