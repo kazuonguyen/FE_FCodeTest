@@ -279,7 +279,7 @@ p {
 
 .search a {
   position: absolute;
-  left: 79%;
+  right: 0;
 }
 
 .search img:first-of-type,
